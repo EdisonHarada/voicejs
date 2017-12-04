@@ -13,7 +13,7 @@ Para utilizar os comandos de voz é necessário efetuar o cadastro de comandos, 
 - command: é responsável pelo que o usuário deverá falar para ser executado, ele poderá possuir parâmetros que devem ser passados por chaves duplas. Ex: "abrir site {{site}}"
 - callback: deve ser uma função que será executada ao comando de voz ser executado, caso o command possua parâmetros será enviado um objeto com todos os parâmetros a esta função.
 
-Exemplo de cadastro de commandos:
+Exemplo de cadastro de comandos:
 >voicejs.listeningCommands.push({
 command: "abrir site {{site}}",
 callback: function(parametro) { console.log('Comando ativado', parametro); }
